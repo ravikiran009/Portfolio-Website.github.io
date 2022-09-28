@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./images/user-tie-solid.svg">
+        <script src="https://kit.fontawesome.com/d05a464dff.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="navbar" class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-list">Skills</a></li>
+                    <li><a href="#projects-list">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <!-- Starting division -->
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Ravi Kiran</span></h1> 
+                    <span class="auto-type"></span> 
+                </div>
+            </div>
+        </div>
+        <!-- About Me  division-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                           I'm currently a student from Indian Institute of Technology, Guwahati. I love coding and enjoy building websites. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <!-- Education -->
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>B.Tech.</span><br>Indian Institute of Technology Guwahati, 2019-Present</li>
+                                <li><span>Senior Secondary</span><br>Narayana Junior College, 2019</li>
+                                <li><span>Secondary</span><br>Bhashyam Public School, 2017</li>
+                            </ul>
+                        </div>
+                        <!-- Projects tab -->
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Blog Website</span><br>Django</li>
+                                <li><span>Porfolio Website</span><br>HTML, CSS, Javascript</li>
+                                <li><span>Flappy Bird</span><br>Pygame</li>
+                                <li><span>Calculator</span><br>Android Development</li>
+                            </ul>
+                        </div>
+                        <!-- Skills tab -->
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C, C++, Python, Javascript</li>
+                                <li><span>Web Development</span><br>HTML, CSS, Django</li>
+                                <li><span>App Development</span><br>Android Development</li>
+                                <li><span>Database</span><br>SQL</li>
+                                <li><span>Operating Systems</span><br>Windows, Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills division -->
+        <div id="skills-list">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skills-list-item">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>
+                            C, C++, Python, Javascript 
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <h2>Web Development</h2>
+                        <p>
+                            HTML, CSS, Django
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-google-play"></i>
+                        <h2>App Development</h2>
+                        <p>
+                            Android Development
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database</h2>
+                        <p>
+                            SQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects division -->
+        <div id="projects-list">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./images/blog.png">
+                        <div class="layer">
+                            <h3>Blog Website</h3>
+                            <p>Fully functional blog website deveoped using Django with complex features that include Login/Sign Up page, 
+                                Post Categories, User Authentication, User Profile, Edit User credentials, Comment section, Like/Unlike. 
+                                Github project repository and deployed Website links are provided below.
+                            </p>
+                            <a href="http://crk99.pythonanywhere.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/ravikiran009/Blog-Website"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/portfolio.png">
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>
+                                Developed my personal Porfolio website using HTML, CSS. Included amazing animations like hover effect, 
+                                complex feature include contact me form. Github project repository and deployed Website links are provided below.
+                            </p>
+                            <a href="http://crk99.pythonanywhere.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/ravikiran009/Blog-Website"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/flappybird.png">
+                        <div class="layer">
+                            <h3>Flappy Bird</h3>
+                            <p>
+                                Developed a very well known classic game using Pygame. Complex features include 
+                                Gravity setting, Collision detection, Score, and Restart button. Github project repository link is provided below.
+                            </p>
+                            <a href="https://github.com/ravikiran009/Flappy-Bird"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/calculator.png">
+                        <div class="layer">
+                            <h3>Calculator App</h3>
+                            <p>
+                                Developed a calculator using Android development on Android Studio. App is very well constrained, 
+                                so it works on any screen size Github project repository link is provided below.
+                            </p>
+                            <a href="https://github.com/ravikiran009/Calculator-App"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact division -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+91-123456789">+91-123456789</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/?lang=en-in"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://in.linkedin.com/company/linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/ravikiran009"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea style="resize: none;" name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Copyright © CRK. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-type",{strings:["Coder","Web Developer","Tech Enthusiast"],typeSpeed:50,backSpeed:50,loop:true})
+        </script>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemen = document.getElementById("menu");
+
+            function openmenu(){
+                sidemen.style.right = "0";
+            }
+            function closemenu(){
+                sidemen.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwtg6p0UJlSJ8k1cf2SRG2KipJqi7BGHvHJV4tPMP6eyNrdgXE_KRXeAorXncP18WBs/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+</html>
